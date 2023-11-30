@@ -26,14 +26,7 @@ nav ul {
     margin: 0;
     display: flex;
     text-align: right;
-    text-decoration: none;
-    color: #000; /* สีของลิงค์ที่ไม่ได้ถูกคลิก */
 }
-
-nav a:hover {
-    text-decoration: underline; /* เมื่อลิงค์ถูก hover ขึ้นขีดเส้นใต้ */
-}
-
 
 nav li {
     display: inline;
