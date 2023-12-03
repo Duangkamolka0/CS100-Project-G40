@@ -1,100 +1,108 @@
 /* Set the font family for the entire body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: black;
-  }
+  font-family: Arial, sans-serif;
+  background: rgb(250,179,252);
+  background: radial-gradient(circle, rgba(250,179,252,1) 0%, rgba(46,46,46,1) 92%);
+}
 
-  h1{
-    color:rgb(255, 255, 255);
-    font-size: 30px;
-    text-align: center;
-    background-color: #febcc0;
-    padding: 20px;
-  }
+.header {
+  background-color: #363636;
+  color: #ffffff; /* White text */
+  padding: 1em;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .form-container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 80px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    color: rgb(192, 192, 192);
-  }
-  
-  /* Center-align the heading and add margin at the bottom */
-  .form-container h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  /* Styling for each form group */
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  /* Styling for form group labels */
-  .form-group label {
-    display: block;
-    font-weight: bold;
-  }
-  
-  /* Styling for various form input types */
-  .form-group input[type="text"],
-  .form-group input[type="email"],
-  .form-group select,
-  .form-group textarea,
-  .form-group input[type="datetime-local"] {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  /* Allow vertical resizing for textareas */
-  .form-group textarea {
-    resize: vertical;
-  }
-  
-  /* Styling for select dropdowns */
-  .form-group select {
-    width: 100%;
-  }
-  
-  /* Styling for the submit button */
-  .form-group input[type="submit"] {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* Styling for small helper text */
-  .form-group small {
-    font-size: 12px;
-    color: #888;
-  }
-  
-  /* New styles for error messages */
-  
-  /* Position the error message relatively within the form group */
-  .form-group {
-    position: relative;
-  }
-  
-  /* Styling for error messages */
-  .error {
-    color: red;
-    display: block;
-    margin-top: 5px;
-    font-size: 12px;
-  }
+nav {
+  margin-left: auto;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  text-align: right;
+}
 
-/* Styling for the reset button */
-.resetButton {
-  background-color: darkred;
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+button {
+  text-decoration: none;
+  color: #ffffff; /* White links */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+button:hover {
+  color: #ff00f2; /* Blue on hover */
+}
+a {
+  text-decoration: none;
+  color: #ffffff; /* White links */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+  color: #ff00f2; /* Blue on hover */
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 80px;
+  border: 1px solid #363636;
+  border-radius: 10px;
+  color: rgb(192, 192, 192);
+  background-color: #363636;
+}
+
+/* Center-align the heading and add margin at the bottom */
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for each form group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Styling for form group labels */
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+/* Styling for various form input types */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea,
+.form-group input[type="datetime-local"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Allow vertical resizing for textareas */
+.form-group textarea {
+  resize: vertical;
+}
+
+/* Styling for select dropdowns */
+.form-group select {
+  width: 100%;
+}
+
+/* Styling for the submit button */
+.form-group input[type="submit"] {
+  background-color: #4caf50;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -102,16 +110,67 @@ body {
   cursor: pointer;
 }
 
+/* Styling for small helper text */
+.form-group small {
+  font-size: 12px;
+  color: #888;
+}
+
+/* New styles for error messages */
+
+/* Position the error message relatively within the form group */
+.form-group {
+  position: relative;
+}
+
+/* Styling for error messages */
+.error {
+  color: red;
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.error input {
+  border-color: #ff3860;
+}
+
+
+/* Styling for the reset button */
+.resetButton {
+background-color: darkred;
+color: white;
+padding: 10px 15px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
 /* Hover effect for the reset button */
 .resetButton:hover {
-  background-color: #8b0000; /* New color on hover */
+background-color: #8b0000; /* New color on hover */
 }
 /* Your existing CSS styles go here */
 
 #imageContainer {
-  margin-top: 20px; /* Adjust as needed */
+margin-top: 20px; /* Adjust as needed */
 }
 
 /* Additional styles for your form elements can be added here */
 
-  
+.custom-output {
+background-color: #de5d83;
+padding: 10px;
+border-radius: 8px;
+margin-top: 15px;
+}
+
+.custom-output p {
+margin: 5px 0;
+color:white;
+}
+
+.activity-heading {
+color:#fff0b4;
+font-size: 20px;
+text-align: center;
+}
